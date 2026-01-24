@@ -1,0 +1,10 @@
+# Backend .gitignore
+node_modules/
+.env
+.env.local
+.env.*.local
+uploads/
+logs/
+*.log
+.DS_Store
+.vscode/
