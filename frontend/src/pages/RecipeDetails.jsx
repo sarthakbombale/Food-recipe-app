@@ -84,7 +84,7 @@ export default function RecipeDetails() {
                 <ListGroup variant="flush" className="mb-4">
                   {recipe.ingredients?.map((item, i) => (
                     <ListGroup.Item key={i} className="px-0">
-                      <span className="text-success me-2">✓</span>
+                      <span className="text-danger me-2">✓</span>
                       {item}
                     </ListGroup.Item>
                   ))}

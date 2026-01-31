@@ -26,7 +26,10 @@ export default function AddFoodRecipe() {
                 'authorization': 'bearer ' + localStorage.getItem("token")
             }
         })
-            .then(() => navigate("/"))
+            .then(() => {
+                window.alert("recipe added successfully")
+                navigate("/")
+            })
             .catch(error => {
                 console.error("Upload Error:", error.response?.data || error.message)
                 alert("Failed to add recipe: " + (error.response?.data?.message || error.message))
