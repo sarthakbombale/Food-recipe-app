@@ -1,0 +1,197 @@
+/* ---------- PAGE WRAPPER ---------- */
+/* Override global card limits */
+.recipe-details-page .card {
+    max-width: 100% !important;
+    width: 100% !important;
+    background: #ffffff;
+}
+
+/* Override global card limits */
+.recipe-details-page .card {
+    max-width: 100% !important;
+    width: 100% !important;
+    background: #ffffff;
+}
+
+
+/* ---------- IMAGE CARD ---------- */
+.recipe-image-card img {
+    height: 460px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .recipe-image-card img {
+        height: 320px;
+    }
+}
+
+/* ---------- AUTHOR ---------- */
+.recipe-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.recipe-author img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+/* ---------- TITLE ---------- */
+.recipe-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- INGREDIENTS ---------- */
+.ingredients-list .list-group-item {
+    border: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.ingredients-list span {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* ---------- INSTRUCTIONS ---------- */
+.recipe-instructions {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+/* ---------- COMMENTS ---------- */
+.comment-card {
+    background-color: #f1f5f9;
+    border-radius: 20px;
+}
+
+.comment-author {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.comment-text {
+    font-size: 14px;
+}
+
+/* ---------- COMMENT INPUT IMPROVED ---------- */
+.comment-box {
+    margin-top: 1.5rem;
+}
+
+.comment-box textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.comment-box textarea::placeholder {
+    color: #94a3b8;
+}
+
+.comment-box textarea:focus {
+    border-color: #213547;
+    box-shadow: 0 0 0 2px rgba(33, 53, 71, 0.2);
+}
+
+/* ---------- FOOTER ACTIONS ---------- */
+.recipe-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.recipe-footer .btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+/* ---------- BADGE ---------- */
+.recipe-time {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+
+/* ---------- LIKE BUTTON ---------- */
+.like-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 999px;
+    border: 1px solid #fecaca;
+    background-color: #fff1f2;
+    color: #dc2626;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.like-btn:hover {
+    background-color: #fee2e2;
+    transform: translateY(-1px);
+}
+
+.like-btn.active {
+    background-color: #dc2626;
+    color: #ffffff;
+    border-color: #dc2626;
+}
+
+.like-btn i {
+    font-size: 16px;
+}
+
+
+/* ---------- BACK BUTTON ---------- */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #213547;
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #e2e8f0;
+    transform: translateX(-2px);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 576px) {
+    .recipe-title {
+        font-size: 22px;
+    }
+
+    .recipe-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .recipe-footer .btn {
+        justify-content: center;
+    }
+}
