@@ -116,23 +116,16 @@ export default function RecipeItems() {
                                 alt={item.title}
                                 style={{
                                     width: '100%',
-<<<<<<< HEAD
                                     height: '100px',
                                     objectFit: 'cover',
-=======
                                     height: '180px',
                                     objectFit: 'cover',
                                     display: 'block',
->>>>>>> d81b541 (Updated recipe app)
                                     borderTopLeftRadius: '6px',
                                     borderTopRightRadius: '6px'
                                 }}
                             />
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d81b541 (Updated recipe app)
                             {/* Card Body */}
                             <div className="card-body">
                                 <div className="title">{item.title}</div>

@@ -1,45 +1,25 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* ---------- GLOBAL RESET ---------- */
-* {
-  padding: 0;
-  margin: 0;
-=======
 /* ---------- IMPORT FONT ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* ---------- ROOT ---------- */
+/* ---------- ROOT & GLOBAL ---------- */
 :root {
-  font-family: Inter, Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 }
 
-/* ---------- GLOBAL RESET ---------- */
 * {
   margin: 0;
   padding: 0;
->>>>>>> d81b541 (Updated recipe app)
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
 body {
   margin: 0;
-  padding-top: 70px;
-  /* ✅ Space for fixed header */
-=======
-/* ---------- BODY (FIXED) ---------- */
-body {
-  margin: 0;
-  padding-top: 70px;
-  /* fixed header space */
   min-height: 100vh;
   background-color: #242424;
+  /* Modern Dark Theme */
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* ---------- LINKS ---------- */
@@ -47,417 +27,144 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
   color: #535bf2;
->>>>>>> d81b541 (Updated recipe app)
 }
 
 /* ---------- HEADER ---------- */
 header {
-<<<<<<< HEAD
-  width: 100vw;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  background-color: #ffffff;
-=======
   width: 100%;
   height: 70px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
-  background: #fff;
+  z-index: 100;
+  background: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
->>>>>>> d81b541 (Updated recipe app)
+  padding: 0 2rem;
 }
 
 header h2 {
-  margin-left: 1rem;
-<<<<<<< HEAD
-}
-
-header ul {
-  width: 40%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-=======
-  color: black;
+  color: #000;
+  font-weight: 700;
 }
 
 header ul {
   display: flex;
   gap: 1.5rem;
-  margin-right: 1rem;
->>>>>>> d81b541 (Updated recipe app)
-}
-
-header ul li {
   list-style: none;
-<<<<<<< HEAD
-  cursor: pointer;
-}
-
-li a {
-  color: black;
-  transition: all 0.3s;
-  padding: 2px 10px;
-  border-radius: 10px;
-}
-
-li a:hover {
-  color: black;
-}
-
-li .login {
-  font-size: 16px;
-  font-weight: 500;
-=======
+  align-items: center;
 }
 
 header ul li a {
-  color: black;
-  padding: 4px 12px;
-  border-radius: 10px;
+  color: #000;
+  padding: 6px 15px;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 .active {
   background-color: #d4f6e8;
->>>>>>> d81b541 (Updated recipe app)
+  color: #000 !important;
 }
 
-/* ---------- SECTION ---------- */
+/* ---------- MAIN SECTION ---------- */
 section {
-<<<<<<< HEAD
-  min-height: calc(100vh - 70px);
-  /* ✅ allow growth, no forced empty space */
   width: 90%;
   margin: 0 auto;
+  margin: 70px auto 0;
+  /* 70px matches your header height exactly */
   padding-top: 1rem;
 }
 
-
-/* ---------- HOME ---------- */
-.home {
-  display: flex;
-  margin-top: 0;
-  /* ✅ REMOVED GAP */
-  gap: 6rem;
-  position: relative;
-}
-
-.home .left h1 {
-  margin-bottom: 1rem;
-}
-
-.home .left h5 {
-  margin: 2rem 0;
-}
-
-.home button {
-  color: white;
-  border: none;
-  background-color: #213547;
-  width: 200px;
-  padding: 0.5rem;
-}
-
-.home a:hover {
-  color: white;
-  background-color: #2c4860;
-=======
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 1rem;
-  position: relative;
-}
-
-/* ---------- HOME (HERO) ---------- */
+/* ---------- HOME / HERO ---------- */
 .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  color: white;
+  padding: 2rem 0;
+}
+
+.home .left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .home button {
-  margin-top: 1rem;
-  background: #213547;
+  background: #646cff;
   border: none;
   color: white;
   width: 200px;
-  padding: 0.6rem;
+  padding: 0.8rem;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
-/* ---------- WAVE BACKGROUND ---------- */
-.bg {
-  position: relative;
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
->>>>>>> d81b541 (Updated recipe app)
-}
-
-.bg svg {
-  position: absolute;
-  bottom: 0;
-<<<<<<< HEAD
+.home button:hover {
+  background: #535bf2;
 }
 
 /* ---------- CARD GRID ---------- */
-
-
-/* ---------- CARD ---------- */
 .card-container {
-  width: 90%;
-  margin: 1rem auto;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 50px;
 }
 
 .card {
-  width: 100%;
-  max-width: 220px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  border-radius: 5px;
+  background: #333;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-=======
-  left: 0;
-  width: 100%;
-  z-index: 1;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* ---------- CARD GRID ---------- */
-.card-container {
-  width: 100%;
-  margin: 2rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-  position: relative;
-  z-index: 2;
-  /* above wave */
-}
-
-/* ---------- CARD ---------- */
-/* ONLY home page cards */
-.card-container .card {
-  width: 100%;
-  max-width: 220px;
-  background: #222;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-}
-
-
-/* ---------- CARD IMAGE (FIXED) ---------- */
->>>>>>> d81b541 (Updated recipe app)
 .card img {
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
-<<<<<<< HEAD
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  display: block; /* Removes bottom alignment gap */
 }
 
-
 .card-body {
-  background-color: #d4f6e8;
-  padding: 1rem;
-  color: #000;
+  background-color: #f8f9fa;
+  /* Light body for contrast */
+  padding: 1.2rem;
+  color: #333;
 }
 
 .card-body .title {
-  margin-bottom: 5px;
-  font-size: 15px;
-  font-weight: 500;
-=======
-  display: block;
-}
-
-/* ---------- CARD BODY ---------- */
-.card-body {
-  background-color: #d4f6e8;
-  padding: 1rem;
-  color: black;
-}
-
-.card-body .title {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
->>>>>>> d81b541 (Updated recipe app)
-}
-
-.card-body .icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-<<<<<<< HEAD
-}
-
-.card-body .timer {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-/* ---------- ACTION ICONS ---------- */
-.action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 45px;
-}
-
-.editIcon {
-  color: black;
-  font-size: 18px;
-}
-
-.deleteIcon {
-  color: rgb(239, 53, 53);
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* ---------- MODAL ---------- */
-.modal {
-  position: fixed;
-  top: 34%;
-  left: 30%;
-  width: 40%;
-  padding: 2rem;
-  border-radius: 6px;
-  border: none;
-  z-index: 10;
-}
-
-.backdrop {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 9;
-}
-
-/* ---------- FORM ---------- */
-.form {
-  width: 71%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.form-header {
-  background-color: #d4f6e8;
-  height: 3px;
-}
-
-.form-control {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.form-control .input,
-.form-control .input-textarea {
-  flex-basis: 70%;
-  border: 1px solid rgb(156 163 175);
-  border-radius: 4px;
-  padding: 4px;
-}
-
-.form button {
-  margin: 2rem 0;
-  border: none;
-  background-color: #d4f6e8;
-  font-size: 14px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-.form p {
-  cursor: pointer;
-  border-bottom: 1px solid #307bbd;
-  color: #307bbd;
-  font-size: 14px;
-}
-
-.form .error {
-  font-size: 13px;
-}
-
-/* ---------- CONTAINERS ---------- */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 70px);
-}
-
-.outer-container {
-  width: 70%;
-  margin: 2rem auto;
-  /* ✅ REDUCED FROM 5rem */
-=======
-  font-size: 13px;
->>>>>>> d81b541 (Updated recipe app)
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-<<<<<<< HEAD
-  width: 100vw;
-  height: 30px;
-  color: white;
-  background-color: #213547;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  padding-top: 2px;
-  font-size: 14px;
-}
-
-/* ---------- ACTIVE LINK ---------- */
-.active {
-  background-color: #d4f6e8;
-  color: black !important;
-=======
   width: 100%;
-  height: 30px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  background-color: #213547;
-  color: white;
+  height: 40px;
+  background-color: #1a1a1a;
+  color: #888;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  z-index: 10;
+  font-size: 12px;
+  margin-top: auto;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -466,5 +173,9 @@ section {
     flex-direction: column;
     text-align: center;
   }
->>>>>>> d81b541 (Updated recipe app)
+
+  header ul {
+    display: none;
+    /* Consider adding a hamburger menu later */
+  }
 }
