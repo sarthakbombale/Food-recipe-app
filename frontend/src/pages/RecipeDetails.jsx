@@ -123,7 +123,7 @@ export default function RecipeDetails() {
                       value={commentText}
                       onChange={(e) => setCommentText(e.target.value)}
                     />
-                    <Button className="mt-2" onClick={postComment}>
+                    <Button className="mt-2 post-comment " onClick={postComment}>
                       Post Comment
                     </Button>
                   </div>

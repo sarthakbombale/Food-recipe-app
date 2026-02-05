@@ -104,6 +104,13 @@
     box-shadow: 0 0 0 2px rgba(33, 53, 71, 0.2);
 }
 
+.post-comment{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
 /* ---------- FOOTER ACTIONS ---------- */
 .recipe-footer {
     display: flex;
