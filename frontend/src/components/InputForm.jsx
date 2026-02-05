@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-<<<<<<< HEAD
-=======
 import "../styles/InputForm.css";
->>>>>>> d81b541 (Updated recipe app)
 
 export default function InputForm({setIsOpen}) {
   const [name,setName]=useState("")
