@@ -23,26 +23,43 @@ export default function InputForm({setIsOpen}) {
   }
 
   return (
-    <>
-        <form className='form' onSubmit={handleOnSubmit}>
-            {isSignUp && (
-              <div className='form-control'>
-                <label>Name</label>
-                <input type="text" className='input' value={name} onChange={(e)=>setName(e.target.value)} required></input>
-              </div>
-            )}
-            <div className='form-control'>
-              <label>Email</label>
-              <input type="email" className='input' value={email} onChange={(e)=>setEmail(e.target.value)} required></input>
-            </div>
-            <div className='form-control'>
-                <label>Password</label>
-                <input type="password" className='input' onChange={(e)=>setPassword(e.target.value)} required></input>
-            </div>
-            <button type='submit'>{(isSignUp) ? "Sign Up": "Login"}</button><br></br>
-          { (error!="") && <h6 className='error'>{error}</h6>}<br></br>
-            <p onClick={()=>setIsSignUp(pre=>!pre)}>{(isSignUp) ? "Already have an account": "Create new account"}</p>
-        </form>
-    </>
+    <form className='auth-form' onSubmit={handleOnSubmit}>
+      <div className='auth-header'>
+        <span className='auth-badge'>Welcome</span>
+        <h3>{isSignUp ? 'Create account' : 'Sign in'}</h3>
+        <p>{isSignUp ? 'Start sharing your favorite recipes.' : 'Welcome back! Continue cooking.'}</p>
+      </div>
+
+      {isSignUp && (
+        <div className='form-control'>
+          <label>Name</label>
+          <input type='text' className='input' value={name} onChange={(e) => setName(e.target.value)} required />
+        </div>
+      )}
+
+      <div className='form-control'>
+        <label>Email</label>
+        <input type='email' className='input' value={email} onChange={(e) => setEmail(e.target.value)} required />
+      </div>
+
+      <div className='form-control'>
+        <label>Password</label>
+        <input type='password' className='input' value={password} onChange={(e) => setPassword(e.target.value)} required />
+      </div>
+
+      <button type='submit' className='auth-submit-btn'>
+        {isSignUp ? 'Sign Up' : 'Login'}
+      </button>
+
+      {error !== '' && <h6 className='error'>{error}</h6>}
+
+      <button
+        type='button'
+        className='auth-toggle-btn'
+        onClick={() => setIsSignUp((pre) => !pre)}
+      >
+        {isSignUp ? 'Already have an account? Login' : 'Create new account'}
+      </button>
+    </form>
   )
 }
