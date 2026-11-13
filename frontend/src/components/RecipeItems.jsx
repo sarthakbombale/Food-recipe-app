@@ -116,8 +116,6 @@ export default function RecipeItems() {
                                 alt={item.title}
                                 style={{
                                     width: '100%',
-                                    height: '100px',
-                                    objectFit: 'cover',
                                     height: '180px',
                                     objectFit: 'cover',
                                     display: 'block',
