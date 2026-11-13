@@ -10,7 +10,9 @@ const multer = require('multer');
 const path = require('path');
 
 const PORT = process.env.PORT || 5000;
-connectDb();
+connectDb().catch((err) => {
+  console.error('MongoDB connection failed:', err.message);
+});
 
 // Multer config
 const storage = multer.diskStorage({
